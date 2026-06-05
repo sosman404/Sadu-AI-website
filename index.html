@@ -26,7 +26,7 @@ html, body {
   overflow-x: hidden;
 }
 
-/* ── BACKGROUND ── */
+/* ─ BACKGROUND ─ */
 .page-bg {
   position: fixed;
   inset: 0;
@@ -38,7 +38,7 @@ html, body {
   background-repeat: no-repeat;
 }
 
-/* ── NAV ── */
+/* ─ NAV ─ */
 nav {
   position: relative;
   z-index: 100;
@@ -89,9 +89,7 @@ nav {
   padding-bottom: 4px;
 }
 
-.nav-links a.active {
-  color: var(--purple-light);
-}
+.nav-links a.active { color: var(--purple-light); }
 
 .nav-links a.active::after {
   content: '';
@@ -124,7 +122,7 @@ nav {
 
 .nav-cta:hover { background: var(--white); color: var(--bg); }
 
-/* ── HERO ── */
+/* ─ HERO ─ */
 .hero {
   position: relative;
   z-index: 1;
@@ -133,7 +131,6 @@ nav {
   align-items: center;
   min-height: calc(100vh - var(--nav-h) - 152px);
   padding: 40px 52px 24px;
-  gap: 0;
   overflow: hidden;
 }
 
@@ -224,7 +221,7 @@ nav {
   background: rgba(255,255,255,0.06);
 }
 
-/* ── HERO RIGHT: AI LETTERS ── */
+/* ─ HERO RIGHT: AI LETTERS (CSS-cropped from full design image) ─ */
 .hero-right {
   position: relative;
   height: calc(100vh - var(--nav-h) - 152px);
@@ -235,20 +232,20 @@ nav {
 .hero-right img {
   position: absolute;
   top: 50%;
-  right: -8%;
-  transform: translateY(-52%);
-  height: 88%;
-  width: auto;
+  right: 0;
+  transform: translateY(-48%);
+  width: 200%;
+  height: auto;
   max-width: none;
   display: block;
 }
 
-/* ── FEATURES ── */
+/* ─ FEATURES ─ */
 .features {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   border-top: 1px solid rgba(255,255,255,0.07);
 }
 
@@ -327,7 +324,7 @@ nav {
   <div class="hero-right">
     <img
       src="https://raw.githubusercontent.com/sosman404/Sadu-AI-website/main/85785F63-1BB8-4C3B-BDC6-BB5DE4A7D4F0.png"
-      alt="AI"
+      alt="Sadu AI 3D letters"
     >
   </div>
 </section>
